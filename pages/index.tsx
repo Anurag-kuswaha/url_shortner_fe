@@ -1,13 +1,10 @@
-import { useState } from 'react';
-import axios from 'axios';
-import URLListTable from '@/components/URLListTable';
-import URLShortner from '@/components/URLShortner';
+import URLListTable from "@/components/URLListTable";
+import URLShortner from "@/components/URLShortner";
 export default function Home() {
- 
   return (
     <>
-  <URLShortner/>
-    <URLListTable/>
+      <URLShortner />
+      <URLListTable />
     </>
   );
 }

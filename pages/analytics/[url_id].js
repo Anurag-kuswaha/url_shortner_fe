@@ -42,7 +42,7 @@ export default function AnalyticsPage() {
           <div className="mt-2 grid grid grid-cols-1 md:grid-cols-2 text-[#1D5E6D]">
             <p><strong>URL ID:</strong> {urlDetails.id}</p>
             <p><strong>Total Clicks:</strong> {urlDetails.clicks}</p>
-            <p><strong>Short URL:</strong> <a href={`process.env.NEXT_PUBLIC_FRONTEND_URL/r/${urlDetails.short_code}`} target="_blank" className="text-blue-500">{`process.env.NEXT_PUBLIC_FRONTEND_URL/r/${urlDetails.short_code}`}</a></p>
+            <p><strong>Short URL:</strong> <a href={`${process.env.NEXT_PUBLIC_FRONTEND_URL}/r/${urlDetails.short_code}`} target="_blank" className="text-blue-500">{`${process.env.NEXT_PUBLIC_FRONTEND_URL}/r/${urlDetails.short_code}`}</a></p>
             <p><strong>Original URL:</strong> <a href={urlDetails.original_url} target="_blank" className="text-blue-500">{urlDetails.original_url}</a></p>
            
           </div>
